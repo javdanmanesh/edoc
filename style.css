@@ -83,7 +83,7 @@ h5{
 
 .literalblock {
   font-family: "ibm plex mono";
-  font-size: 1.2rem;
+  font-size: 85%;
   background-color: #DDD;
   padding: 1rem 0.5rem;
   margin: 0.5rem 0;
@@ -141,5 +141,7 @@ dt {
 kbd,
 code {
     font-family: "ibm plex mono";
-    font-size: 1.2rem;
+    font-size: 85%;
+    background-color: #DDD;
+    padding: 0 0.2rem;
 }
