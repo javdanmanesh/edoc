@@ -55,6 +55,7 @@
 }
 
 body {
+    text-align: justify;
   font-family: "ibm plex sans";
   font-size: 1.5rem;
   line-height: 150%;
