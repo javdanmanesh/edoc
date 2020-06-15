@@ -150,6 +150,8 @@
 
         </td>
       </tr>
+    </table>
+    <table>
       <tr>
         <th colspan="2" align="left" style="text-align:left">Important General Concepts
         </th>
@@ -19017,7 +19019,7 @@
                    display: by this font (glyph code)
          xft:-PfEd-DejaVu Sans Mono-normal-normal-
              normal-*-15-*-*-*-m-0-iso10646-1 (#xAC)
-     
+
      Character code properties: customize what to show
        name: LATIN SMALL LETTER E WITH CIRCUMFLEX
        old-name: LATIN SMALL LETTER E CIRCUMFLEX
@@ -20259,21 +20261,21 @@
     <pre class="example">     ;; Use Liberation Mono for latin-3 charset.
      (set-fontset-font "fontset-default" 'iso-8859-3
                        "Liberation Mono")
-     
+
      ;; Prefer a big5 font for han characters.
      (set-fontset-font "fontset-default"
                        'han (font-spec :registry "big5")
                        nil 'prepend)
-     
+
      ;; Use DejaVu Sans Mono as a fallback in fontset-startup
      ;; before resorting to fontset-default.
      (set-fontset-font "fontset-startup" nil "DejaVu Sans Mono"
                        nil 'append)
-     
+
      ;; Use MyPrivateFont for the Unicode private use area.
      (set-fontset-font "fontset-default"  '(#xe000 . #xf8ff)
                        "MyPrivateFont")
-     
+
 </pre>
     <p><a name="index-ignore-font-1956"></a><a name="index-fonts_002c-how-to-ignore-1957"></a><a name="index-face_002dignored_002dfonts-1958"></a> Some fonts installed on your system might be broken, or produce
       unpleasant results for characters for which they are used, and you may
@@ -22233,17 +22235,17 @@
     <pre class="example">     * Food
      This is the body,
      which says something about the topic of food.
-     
+
      ** Delicious Food
      This is the body of the second-level header.
-     
+
      ** Distasteful Food
      This could have
      a body too, with
      several lines.
-     
+
      *** Dormitory Food
-     
+
      * Shelter
      Another first-level topic with its header line.
 </pre>
@@ -22681,11 +22683,11 @@
      - This text is *in bold*
      - This text is _underlined_
      - This text uses =a teletype font=
-     
+
      #+begin_quote
      ``This is a quote.''
      #+end_quote
-     
+
      #+begin_example
      This is an example.
      #+end_example
@@ -23969,7 +23971,7 @@
 
     <pre class="example">     table-capture is a powerful command.
      Here are some things it can do:
-     
+
      Parse Cell Items   Using row and column delimiter regexps,
                         it parses the specified text area and
                         extracts cell items into a table.
@@ -30083,7 +30085,7 @@
       <samp><span class="file">ChangeLog</span></samp> entry:
 
     <pre class="smallexample">     1999-05-22  Nathaniel Bowditch  &lt;nat@apn.org&gt;
-     
+
              * rcs2log: Ignore log messages that start with '#'.
 </pre>
     <p class="noindent">If the version control log entry specifies a function name (in
@@ -30093,7 +30095,7 @@
       <samp><span class="file">ChangeLog</span></samp> entry is:
 
     <pre class="smallexample">     1999-05-06  Nathaniel Bowditch  &lt;nat@apn.org&gt;
-     
+
              * vc.el (vc-do-command): Check call-process status.
 </pre>
     <p>When <kbd>C-x v a</kbd> adds several change log entries at once, it
@@ -30537,15 +30539,15 @@
       dated in May 1993, with two items and one item respectively.
 
     <pre class="smallexample">     1993-05-25  Richard Stallman  &lt;rms@gnu.org&gt;
-     
+
              * man.el: Rename symbols 'man-*' to 'Man-*'.
              (manual-entry): Make prompt string clearer.
-     
+
              * simple.el (blink-matching-paren-distance):
              Change default to 12,000.
-     
+
      1993-05-24  Richard Stallman  &lt;rms@gnu.org&gt;
-     
+
              * vc.el (minor-mode-map-alist): Don't use it if it's void.
              (vc-cancel-version): Doc fix.
 </pre>
@@ -40590,7 +40592,7 @@
         <p><samp><span class="file">~/.config/systemd/user/emacs.socket</span></samp>:
         <pre class="example">          [Socket]
           ListenStream=/path/to/.emacs.socket
-          
+
           [Install]
           WantedBy=sockets.target
 </pre>
@@ -42624,20 +42626,20 @@
       <!-- that's quite a bit of text, so force all space to the bottom. -->
       <!-- @page -->
     <pre class="smallexample">     For help using this buffer, see [Easy Customization] in the [Emacs manual].
-     
+
      ________________________________________ [ Search ]
-     
+
       Operate on all settings in this buffer:
       [ Revert... ] [ Apply ] [ Apply and Save ]
-     
-     
+
+
      Emacs group: Customization of the One True Editor.
            [State]: visible group members are all at standard values.
            See also [Manual].
-     
+
      [Editing]      Basic text editing facilities.
      [Convenience]  Convenience features for faster editing.
-     
+
      <var>...more second-level groups...</var>
 </pre>
     <p class="noindent">The main part of this buffer shows the &lsquo;<samp><span class="samp">Emacs</span></samp>&rsquo; customization
@@ -42919,7 +42921,7 @@
            (t
             ;; <span class="roman">Emacs version 22.3 or later.</span>
             (setq custom-file "~/.emacs-custom.el")))
-     
+
      (load custom-file)
 </pre>
     <p>If Emacs was invoked with the <samp><span class="option">-q</span></samp> or <samp><span class="option">--no-init-file</span></samp>
@@ -43335,15 +43337,15 @@
 
     <pre class="example">     fill-column is a variable defined in ‘C source code’.
      Its value is 70
-     
+
        Automatically becomes buffer-local when set.
        This variable is safe as a file local variable if its value
        satisfies the predicate ‘integerp’.
-     
+
      Documentation:
      Column beyond which automatic line-wrapping should happen.
      Interactively, you can set the buffer local value using C-x f.
-     
+
      You can customize this variable.
 </pre>
     <p class="noindent">The line that says &lsquo;<samp><span class="samp">You can customize the variable</span></samp>&rsquo; indicates that
@@ -43446,7 +43448,7 @@
          (c-cleanup-list . (scope-operator
                             empty-defun-braces
                             defun-close-semi))))
-     
+
      (add-hook 'c-mode-common-hook
        (lambda () (c-add-style "my-style" my-c-style t)))
 </pre>
@@ -43914,7 +43916,7 @@
 
     <pre class="example">     (dir-locals-set-class-variables 'unwritable-directory
         '((nil . ((some-useful-setting . value)))))
-     
+
      (dir-locals-set-directory-class
         "/usr/include/" 'unwritable-directory)
 </pre>
@@ -44968,7 +44970,7 @@
 
         <pre class="example">          (if (fboundp 'blink-cursor-mode)
               (blink-cursor-mode 0))
-          
+
           (if (boundp 'coding-category-utf-8)
               (set-coding-priority '(coding-category-utf-8)))
 </pre>
@@ -46552,7 +46554,7 @@
     <!-- This file is intended to be included within another document, -->
     <!-- hence no sectioning command or @node. -->
     <pre class="display">     Copyright &copy; 2007 Free Software Foundation, Inc. <a href="https://fsf.org/">https://fsf.org/</a>
-     
+
      Everyone is permitted to copy and distribute verbatim copies of this
      license document, but changing it is not allowed.
 </pre>
@@ -47201,17 +47203,17 @@
 
     <pre class="smallexample">     <var>one line to give the program's name and a brief idea of what it does.</var>
      Copyright (C) <var>year</var> <var>name of author</var>
-     
+
      This program is free software: you can redistribute it and/or modify
      it under the terms of the GNU General Public License as published by
      the Free Software Foundation, either version 3 of the License, or (at
      your option) any later version.
-     
+
      This program is distributed in the hope that it will be useful, but
      WITHOUT ANY WARRANTY; without even the implied warranty of
      MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
      General Public License for more details.
-     
+
      You should have received a copy of the GNU General Public License
      along with this program.  If not, see <a href="https://www.gnu.org/licenses/">https://www.gnu.org/licenses/</a>.
 </pre>
@@ -47260,7 +47262,7 @@
     <!-- hence no sectioning command or @node. -->
     <pre class="display">     Copyright &copy; 2000, 2001, 2002, 2007, 2008 Free Software Foundation, Inc.
      <a href="https://fsf.org/">https://fsf.org/</a>
-     
+
      Everyone is permitted to copy and distribute verbatim copies
      of this license document, but changing it is not allowed.
 </pre>
@@ -49570,7 +49572,7 @@
      {
        font_name = "helvetica bold 14"
      }
-     
+
      # <span class="roman">Specify that widget type &lsquo;</span><samp><span class="samp">*emacs-menuitem*</span></samp><span class="roman">&rsquo; uses &lsquo;</span><samp><span class="samp">my_style</span></samp><span class="roman">&rsquo;.</span>
      widget "*emacs-menuitem*" style "my_style"
 </pre>
@@ -49592,7 +49594,7 @@
        bg[ACTIVE] = "blue"    # <span class="roman">Trough color.</span>
        bg[PRELIGHT] = "white" # <span class="roman">Thumb color when the mouse is over it.</span>
      }
-     
+
      widget "*verticalScrollBar*" style "scroll"
 </pre>
     <div class="node" style="background-color:#DDDDFF">
@@ -49735,37 +49737,37 @@
       Here is an example of two GTK+ style declarations:
 
     <pre class="smallexample">     pixmap_path "/usr/share/pixmaps:/usr/include/X11/pixmaps"
-     
+
      style "default"
      {
        font_name = "helvetica 12"
-     
+
        bg[NORMAL] = { 0.83, 0.80, 0.73 }
        bg[SELECTED] = { 0.0, 0.55, 0.55 }
        bg[INSENSITIVE] = { 0.77, 0.77, 0.66 }
        bg[ACTIVE] = { 0.0, 0.55, 0.55 }
        bg[PRELIGHT] = { 0.0, 0.55, 0.55 }
-     
+
        fg[NORMAL] = "black"
        fg[SELECTED] = { 0.9, 0.9, 0.9 }
        fg[ACTIVE] = "black"
        fg[PRELIGHT] = { 0.9, 0.9, 0.9 }
-     
+
        base[INSENSITIVE] = "#777766"
        text[INSENSITIVE] = { 0.60, 0.65, 0.57 }
-     
+
        bg_pixmap[NORMAL] = "background.xpm"
        bg_pixmap[INSENSITIVE] = "background.xpm"
        bg_pixmap[ACTIVE] = "background.xpm"
        bg_pixmap[PRELIGHT] = "&lt;none&gt;"
-     
+
      }
-     
+
      style "ruler" = "default"
      {
        font_name = "helvetica 8"
      }
-     
+
 </pre>
     <p>The style &lsquo;<samp><span class="samp">ruler</span></samp>&rsquo; inherits from &lsquo;<samp><span class="samp">default</span></samp>&rsquo;. This way you can build
       on existing styles. The syntax for fonts and colors is described below.
